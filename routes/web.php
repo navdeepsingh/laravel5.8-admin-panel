@@ -24,6 +24,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('admin', 'Admin\AdminController@index');
 Route::group(['middleware' => ['auth']], function () {
     Route::resource('admin/users', 'Admin\UsersController');
+    Route::view('admin/unauthorized', 'admin.unauthorized');
 });
 // Check role in route middleware
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => ['auth', 'roles'], 'roles' => 'super-admin'], function () {

@@ -10,13 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+// app()->singleton('example', function() {
+//     return new \App\Example;
+// });
 
-
-
-
-
-
-// Frontend Roles
+// Frontend Routes  
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/signup', 'SignupController@store')->name('signup');

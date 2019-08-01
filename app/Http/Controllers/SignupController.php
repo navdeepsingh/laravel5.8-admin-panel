@@ -34,13 +34,12 @@ class SignupController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
+        $requestData = $this->validate($request, [
           'name' => 'required',
           'email' => 'required',
           'phone' => 'required',
           'beer' => 'required',
         ]);
-        $requestData = $request->all();
         
         Signup::create($requestData);
 

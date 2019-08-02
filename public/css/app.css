@@ -10644,3 +10644,7 @@ a.text-dark:focus {
   }
 }
 
+.invalid-feedback {
+  display: block !important;
+}
+

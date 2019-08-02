@@ -17,7 +17,7 @@
 // Frontend Routes  
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
-Route::post('/signup', 'SignupController@store')->name('signup');
+Route::post('/signup', 'SignupController@store');
 
 // Backend Routes
 Auth::routes(['register' => false]);

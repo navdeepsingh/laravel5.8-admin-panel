@@ -34,16 +34,16 @@ class SignupController extends Controller
      */
     public function store(Request $request)
     {
-        $requestData = $this->validate($request, [
+        $validatedData = $request->validate([
           'name' => 'required',
           'email' => 'required',
           'phone' => 'required',
           'beer' => 'required',
         ]);
         
-        Signup::create($requestData);
+        $signup = Signup::create($validatedData);
 
-        return redirect('home')->with('flash_message', 'Signup added!');
+        return response()->json($signup);
     }
 
     

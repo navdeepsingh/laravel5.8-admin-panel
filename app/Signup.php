@@ -15,4 +15,11 @@ class Signup extends Model
         'name', 'email', 'phone', 'beer', 'opt_in',
     ];
 
+        /**
+     * The attributes excluded from the model's JSON form.
+     *
+     * @var array
+     */
+    protected $hidden = [];
+
 }

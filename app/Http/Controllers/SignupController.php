@@ -39,6 +39,7 @@ class SignupController extends Controller
           'email' => 'required',
           'phone' => 'required',
           'beer' => 'required',
+          'opt_in' => 'nullable'
         ]);
         
         $signup = Signup::create($validatedData);

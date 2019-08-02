@@ -4,11 +4,17 @@ import Footer from './sub-components/Footer';
 import SignupForm from './sub-components/SignupForm';
 
 class Home extends React.Component {
+
+  constructor(props) {
+    super(props);
+  }
+
   render() {
+    const props = { ...this.props };
     return (
       <div>
         <Header />
-        <SignupForm />
+        <SignupForm props={props} />
         <Footer />
       </div>
     )

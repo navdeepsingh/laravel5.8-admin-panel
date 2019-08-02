@@ -2,6 +2,11 @@ import React from 'react';
 
 class SignupForm extends React.Component {
 
+  constructor(props) {
+    super(props);
+    console.log(this.props);
+  }
+
   name = React.createRef();
   email = React.createRef();
   phone = React.createRef();
@@ -21,25 +26,25 @@ class SignupForm extends React.Component {
   onSubmitHandle = (e) => {
     e.preventDefault();
 
+    const { history } = this.props.props;
+
     const signup = {
       name: this.name.current.value,
       email: this.email.current.value,
       phone: this.phone.current.value,
       beer: this.beer.current.selectedOptions[0].text,
-      opt_in: this.optIn.current.checked,
+      opt_in: this.optIn.current.checked === true ? 1 : 0
     }
 
-    console.log(signup);
 
-    axios.post('/signup', signup)
+    axios.post('/api/signup', signup)
       .then(response => {
-        console.log(response);
-        // redirect to the homepage
-        //history.push('/')
+        if (response.status == 200) {
+          // redirect to the thanks
+          history.push('/thanks');
+        }
       })
       .catch(error => {
-        console.log(error.response);
-
         this.setState({
           errors: error.response.data.errors
         })

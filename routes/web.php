@@ -10,14 +10,17 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-// app()->singleton('example', function() {
-//     return new \App\Example;
-// });
 
-// Frontend Routes  
-Route::get('/', 'HomeController@index')->name('home');
-Route::get('/home', 'HomeController@index')->name('home');
-Route::post('/signup', 'SignupController@store');
+// Reactjs Routes
+Route::get('{reactRoutes}', function () {
+    return view('layouts.react'); // your start view
+})->where('reactRoutes', '^((?!admin|api|login|logout|password).)*$'); // except 'api' word
+
+// Laravel Routes  
+Route::group(['prefix' => 'api'], function () {
+    Route::post('/signup', 'SignupController@store')->name('signup');
+});
+
 
 // Backend Routes
 Auth::routes(['register' => false]);

@@ -22,4 +22,12 @@ class Signup extends Model
      */
     protected $hidden = [];
 
+    /**
+     * Get the redemption record associated with the signup.
+     */
+    public function redemption()
+    {
+        return $this->hasOne('App\Redemption');
+    }
+
 }

@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Signup;
+use App\Redemption;
 
 class SignupController extends Controller
 {
@@ -36,13 +37,18 @@ class SignupController extends Controller
     {
         $validatedData = $request->validate([
           'name' => 'required',
-          'email' => 'required',
+          'email' => 'required|unique:signups',
           'phone' => 'required',
           'beer' => 'required',
           'opt_in' => 'nullable'
         ]);
         
         $signup = Signup::create($validatedData);
+
+        $redemption = new Redemption;
+        $redemption->redeem_code = 'RANDOM';
+
+        $signup->redemption()->save($redemption);
 
         return response()->json($signup);
     }

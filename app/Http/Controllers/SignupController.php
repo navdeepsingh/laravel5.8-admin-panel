@@ -46,6 +46,7 @@ class SignupController extends Controller
         $signup = Signup::create($validatedData);
 
         $redemption = new Redemption;
+        //@TODO Create Random Code
         $redemption->redeem_code = 'RANDOM';
 
         $signup->redemption()->save($redemption);

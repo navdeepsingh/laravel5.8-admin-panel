@@ -19,6 +19,7 @@ Route::get('{reactRoutes}', function () {
 // Laravel Routes  
 Route::group(['prefix' => 'api'], function () {
     Route::post('/signup', 'SignupController@store')->name('signup');
+    Route::post('/redeem', 'SignupRedemptionController@redeem');
 });
 
 

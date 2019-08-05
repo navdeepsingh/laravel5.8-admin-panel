@@ -26,7 +26,7 @@ class SignupForm extends React.Component {
   onSubmitHandle = (e) => {
     e.preventDefault();
 
-    const { history } = this.props.props;
+    const { history } = this.props.propsPassed;
 
     const signup = {
       name: this.name.current.value,

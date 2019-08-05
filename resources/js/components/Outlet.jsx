@@ -1,20 +1,15 @@
 import React from 'react';
 import Header from './sub-components/Header';
 import Footer from './sub-components/Footer';
-import SignupForm from './sub-components/SignupForm';
+import RedemptionForm from './sub-components/RedemptionForm';
 
-class Home extends React.Component {
-
-  constructor(props) {
-    super(props);
-  }
-
+class Outlet extends React.Component {
   render() {
     const props = { ...this.props };
     return (
       <div>
         <Header />
-        <SignupForm propsPassed={props} />
+        <RedemptionForm propsPassed={props} />
         <Footer />
       </div>
     )
@@ -22,4 +17,4 @@ class Home extends React.Component {
 }
 
 
-export default Home;
+export default Outlet;

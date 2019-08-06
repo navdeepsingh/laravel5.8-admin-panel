@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 import Home from './Home';
 import Thanks from './Thanks';
 import Outlet from './Outlet';
+import Success from './Success';
+import Error from './Error';
 import NotFound from './NotFound';
 
 class App extends Component {
@@ -14,6 +16,8 @@ class App extends Component {
                     <Route exact path='/' component={Home} />
                     <Route path='/thanks' component={Thanks} />
                     <Route path='/:code/outlet' component={Outlet} />
+                    <Route path='/success' component={Success} />
+                    <Route path='/error' component={Error} />
                     <Route path='*' exact={true} component={NotFound} />
                 </Switch>
             </BrowserRouter>

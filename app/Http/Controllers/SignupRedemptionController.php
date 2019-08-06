@@ -23,12 +23,12 @@ class SignupRedemptionController extends Controller
 
         if (sizeof($redemptionOutlet) === 1) {
             // Already Redeemed
-            $response = 'Already Redeemed';
+            $response = 0;
         } else {
             // New Redemption
             $redemption->outlet_id = $outlet->id;
             $redemption->save();
-            $response = 'Yes';
+            $response = 1;
         }
 
         return response()->json( $response );

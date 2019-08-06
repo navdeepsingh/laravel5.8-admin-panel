@@ -42,7 +42,12 @@ class RedemptionForm extends React.Component {
 
     axios.post(`/api/redeem`, redeem)
       .then(response => {
-        console.log(response)
+        console.log(response);
+        if (response.data) {
+          props.history.push('/success');
+        } else {
+          props.history.push('/error');
+        }
       })
       .catch(error => {
         console.log(error.response);

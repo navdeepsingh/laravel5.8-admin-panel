@@ -66290,11 +66290,17 @@ function (_React$Component) {
     _defineProperty(_assertThisInitialized(_this), "optIn", react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef());
 
     _defineProperty(_assertThisInitialized(_this), "state", {
+      loading: false,
       errors: []
     });
 
     _defineProperty(_assertThisInitialized(_this), "onSubmitHandle", function (e) {
       e.preventDefault();
+
+      _this.setState({
+        loading: true
+      });
+
       var history = _this.props.propsPassed.history;
       var signup = {
         name: _this.name.current.value,
@@ -66310,7 +66316,8 @@ function (_React$Component) {
         }
       })["catch"](function (error) {
         _this.setState({
-          errors: error.response.data.errors
+          errors: error.response.data.errors,
+          loading: false
         });
       });
     });
@@ -66420,13 +66427,14 @@ function (_React$Component) {
         value: "1"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         className: "form-check-label",
-        htmlFor: "exampleCheck1"
+        htmlFor: "opt_in"
       }, "Opt In")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "form-group"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "submit",
-        value: "Submit",
-        className: "btn btn-primary"
+        value: this.state.loading ? 'Loading...' : 'Submit',
+        className: "btn btn-primary",
+        disabled: this.state.loading
       })))))))));
     }
   }]);

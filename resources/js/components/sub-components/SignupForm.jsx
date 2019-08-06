@@ -14,6 +14,7 @@ class SignupForm extends React.Component {
   optIn = React.createRef();
 
   state = {
+    loading: false,
     errors: []
   }
 
@@ -25,6 +26,9 @@ class SignupForm extends React.Component {
 
   onSubmitHandle = (e) => {
     e.preventDefault();
+    this.setState({
+      loading: true
+    });
 
     const { history } = this.props.propsPassed;
 
@@ -46,7 +50,8 @@ class SignupForm extends React.Component {
       })
       .catch(error => {
         this.setState({
-          errors: error.response.data.errors
+          errors: error.response.data.errors,
+          loading: false
         })
       })
   }
@@ -102,10 +107,12 @@ class SignupForm extends React.Component {
                     </div>
                     <div className="form-group form-check">
                       <input type="checkbox" ref={this.optIn} className="form-check-input" id="opt_in" defaultChecked value="1" />
-                      <label className="form-check-label" htmlFor="exampleCheck1">Opt In</label>
+                      <label className="form-check-label" htmlFor="opt_in">Opt In</label>
                     </div>
                     <div className="form-group">
-                      <input type="submit" value="Submit" className="btn btn-primary" />
+                      <input type="submit" value={this.state.loading ? 'Loading...' : 'Submit'} className="btn btn-primary"
+                        disabled={this.state.loading}
+                      />
                     </div>
                   </form>
                 </div>

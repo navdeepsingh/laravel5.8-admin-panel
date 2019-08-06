@@ -3,21 +3,36 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Outlet;
+use App\Redemption;
 
 class SignupRedemptionController extends Controller
 {
     public function redeem(Request $request) {
-        // @TODO Basic Check Outlet Code
+        // Basic Check Outlet Code
         $validatedData = $request->validate([
-            'outlet' => 'required|exists:outlets,code'
+            'outlet' => 'required|exists:outlets,code',
+            'redeem_code' => 'required|exists:redemption,redeem_code'
         ]);
         
-        // @TODO Get Signup object from redeem code
+        // Get Outlet Object
+        $outlet = Outlet::where('code', $request->outlet)->first();
+        
+        $redemption = Redemption::where('redeem_code', $request->redeem_code)->first();
+        $redemptionOutlet = $redemption->outlet()->get();
 
-        // @TODO Authenticate signup user with redemption
-        // Redeem Code if all good and send to thanks page
-        // Else redirect to Error page
-    
-        return response()->json( $validatedData);
+        if (sizeof($redemptionOutlet) === 1) {
+            // Already Redeemed
+            $response = 'Already Redeemed';
+        } else {
+            // New Redemption
+            $redemption->outlet_id = $outlet->id;
+            $redemption->save();
+            $response = 'Yes';
+        }
+
+        return response()->json( $response );
     }
 }
+
+

@@ -30,4 +30,12 @@ class Signup extends Model
         return $this->hasOne('App\Redemption');
     }
 
+     /**
+     * Get the outlet record associated with the signup.
+     */
+    public function outlet()
+    {
+        return $this->hasOne('App\Outlet');
+    }
+
 }

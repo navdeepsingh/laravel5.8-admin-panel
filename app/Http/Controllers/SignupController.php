@@ -1,8 +1,10 @@
 <?php
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use App\Signup;
 use App\Redemption;
+
 
 class SignupController extends Controller
 {
@@ -46,8 +48,8 @@ class SignupController extends Controller
         $signup = Signup::create($validatedData);
 
         $redemption = new Redemption;
-        //@TODO Create Random Code
-        $redemption->redeem_code = 'RANDOM';
+        // Create Random Code
+        $redemption->redeem_code = Str::random(5);
 
         $signup->redemption()->save($redemption);
 

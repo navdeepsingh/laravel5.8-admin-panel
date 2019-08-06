@@ -66075,7 +66075,7 @@ function (_React$Component) {
         id: "outlet",
         name: "outlet",
         placeholder: ""
-      }), this.renderErrorFor('outlet')), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }), this.renderErrorFor('outlet'), this.renderErrorFor('redeem_code')), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "form-group"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "submit",

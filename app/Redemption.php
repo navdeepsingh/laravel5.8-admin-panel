@@ -16,4 +16,12 @@ class Redemption extends Model
     {
         return $this->belongsTo('App\Signup');
     }
+
+    /**
+     * Get the signup that owns the redemption.
+     */
+    public function outlet()
+    {
+        return $this->belongsTo('App\Outlet');
+    }
 }

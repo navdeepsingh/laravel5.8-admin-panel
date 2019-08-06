@@ -82,6 +82,7 @@ class RedemptionForm extends React.Component {
                       <label htmlFor="name">Outlet Code</label>
                       <input type="text" ref={this.outlet} className="form-control" id="outlet" name="outlet" placeholder="" />
                       {this.renderErrorFor('outlet')}
+                      {this.renderErrorFor('redeem_code')}
                     </div>
                     <div className="form-group">
                       <input type="submit" value="Submit" className="btn btn-primary" />

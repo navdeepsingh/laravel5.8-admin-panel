@@ -20,11 +20,6 @@ class RedemptionForm extends React.Component {
     })
   }
 
-  componentDidMount() {
-    const props = this.props.propsPassed;
-    const code = props.match.params.code;
-  }
-
   onSubmitHandle = (e) => {
     e.preventDefault();
 

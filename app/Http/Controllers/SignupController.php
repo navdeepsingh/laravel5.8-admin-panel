@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use App\Signup;
 use App\Redemption;
+ use App\Events\SignupEvent;
 
 
 class SignupController extends Controller
@@ -47,11 +48,14 @@ class SignupController extends Controller
         
         $signup = Signup::create($validatedData);
 
-        $redemption = new Redemption;
-        // Create Random Code
+        // Create Random Code and save to Redemption table
+        $redemption = new Redemption;        
         $redemption->redeem_code = Str::random(5);
-
         $signup->redemption()->save($redemption);
+
+        if ($request->opt_in) {
+            event(new SignupEvent($signup));
+        }
 
         return response()->json($signup);
     }

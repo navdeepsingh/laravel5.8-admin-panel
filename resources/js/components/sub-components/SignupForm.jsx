@@ -74,47 +74,52 @@ class SignupForm extends React.Component {
     return (
       <div>
         <div className="container">
-          <div className="row justify-content-center">
+          <div className="row py-5">
             <div className="col-md-12">
-              <div className="card">
-                <div className="card-header">Signup</div>
-                <div className="card-body">
-                  <form method="POST" action="/signup" onSubmit={this.onSubmitHandle}>
-                    <div className="form-group">
-                      <label htmlFor="name">Name</label>
-                      <input type="text" ref={this.name} className="form-control" id="name" name="name" placeholder="Enter name" />
-                      {this.renderErrorFor('name')}
+
+              <div className="row justify-content-center">
+                <div className="col-md-6">
+                  <div className="card">
+                    <div className="card-header">Signup</div>
+                    <div className="card-body">
+                      <form method="POST" action="/signup" onSubmit={this.onSubmitHandle}>
+                        <div className="form-group">
+                          <label htmlFor="name">Name</label>
+                          <input type="text" ref={this.name} className="form-control" id="name" name="name" placeholder="Enter name" />
+                          {this.renderErrorFor('name')}
+                        </div>
+                        <div className="form-group">
+                          <label htmlFor="email">Email address</label>
+                          <input type="email" ref={this.email} className="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" />
+                          <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+                          {this.renderErrorFor('email')}
+                        </div>
+                        <div className="form-group">
+                          <label htmlFor="phone">Contact No</label>
+                          <input type="text" ref={this.phone} className="form-control" id="phone" name="phone" placeholder="Enter Contact No." />
+                          {this.renderErrorFor('phone')}
+                        </div>
+                        <div className="form-group">
+                          <label htmlFor="beer">Preffered Beer</label>
+                          <select name="beer" ref={this.beer} id="beer" className="form-control">
+                            <option value="">Beer 1</option>
+                            <option value="">Beer 2</option>
+                            <option value="">Beer 3</option>
+                          </select>
+                          {this.renderErrorFor('beer')}
+                        </div>
+                        <div className="form-group form-check">
+                          <input type="checkbox" ref={this.optIn} className="form-check-input" id="opt_in" defaultChecked value="1" />
+                          <label className="form-check-label" htmlFor="opt_in">Opt In</label>
+                        </div>
+                        <div className="form-group">
+                          <input type="submit" value={this.state.loading ? 'Loading...' : 'Submit'} className="btn btn-primary"
+                            disabled={this.state.loading}
+                          />
+                        </div>
+                      </form>
                     </div>
-                    <div className="form-group">
-                      <label htmlFor="email">Email address</label>
-                      <input type="email" ref={this.email} className="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" />
-                      <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
-                      {this.renderErrorFor('email')}
-                    </div>
-                    <div className="form-group">
-                      <label htmlFor="phone">Contact No</label>
-                      <input type="text" ref={this.phone} className="form-control" id="phone" name="phone" placeholder="Enter Contact No." />
-                      {this.renderErrorFor('phone')}
-                    </div>
-                    <div className="form-group">
-                      <label htmlFor="beer">Preffered Beer</label>
-                      <select name="beer" ref={this.beer} id="beer" className="form-control">
-                        <option value="">Beer 1</option>
-                        <option value="">Beer 2</option>
-                        <option value="">Beer 3</option>
-                      </select>
-                      {this.renderErrorFor('beer')}
-                    </div>
-                    <div className="form-group form-check">
-                      <input type="checkbox" ref={this.optIn} className="form-check-input" id="opt_in" defaultChecked value="1" />
-                      <label className="form-check-label" htmlFor="opt_in">Opt In</label>
-                    </div>
-                    <div className="form-group">
-                      <input type="submit" value={this.state.loading ? 'Loading...' : 'Submit'} className="btn btn-primary"
-                        disabled={this.state.loading}
-                      />
-                    </div>
-                  </form>
+                  </div>
                 </div>
               </div>
             </div>

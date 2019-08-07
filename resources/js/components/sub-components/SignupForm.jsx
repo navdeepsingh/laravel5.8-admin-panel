@@ -72,12 +72,26 @@ class SignupForm extends React.Component {
 
   render() {
     return (
-      <div>
-        <div className="container">
-          <div className="row py-5">
+      <div className="home">
+
+
+
+        <div className="container-fluid">
+          <div className="row pb-5">
             <div className="col-md-12">
 
-              <div className="row justify-content-center">
+              <div className="intro row py-3 justify-content-center">
+                <div className="col-md-6 text-center">
+                  <h2>Get your free beer* at Brotzeit this Oktoberfest!</h2>
+                  <p>
+                    Step 1: Fill in the form below<br />
+                    Step 2: Look out for an email from Brotzeit<br />
+                    Step 3: Head to your nearest Brotzeit outlet from<br />
+                    3 Sep - 15 Oct 2019 to redeem!
+                    </p>
+                </div>
+              </div>
+              <div className="row justify-content-center pt-5">
                 <div className="col-md-6">
                   <div className="card">
                     <div className="card-header">Signup</div>
@@ -102,30 +116,46 @@ class SignupForm extends React.Component {
                         <div className="form-group">
                           <label htmlFor="beer">Preffered Beer</label>
                           <select name="beer" ref={this.beer} id="beer" className="form-control">
-                            <option value="">Beer 1</option>
-                            <option value="">Beer 2</option>
-                            <option value="">Beer 3</option>
+                            <option value="Hacker-Pschorr Original Oktoberfest Amber Märzen">Hacker-Pschorr Original Oktoberfest Amber Märzen</option>
+                            <option value="Hacker-Pschorr Weisse (Weissbier)">Hacker-Pschorr Weisse (Weissbier)</option>
                           </select>
                           {this.renderErrorFor('beer')}
                         </div>
                         <div className="form-group form-check">
                           <input type="checkbox" ref={this.optIn} className="form-check-input" id="opt_in" defaultChecked value="1" />
-                          <label className="form-check-label" htmlFor="opt_in">Opt In</label>
+                          <label className="form-check-label" htmlFor="opt_in">Sign up for Brotzeit's mailing list to receive exclusive promotions and more!</label>
                         </div>
                         <div className="form-group">
                           <input type="submit" value={this.state.loading ? 'Loading...' : 'Submit'} className="btn btn-primary"
                             disabled={this.state.loading}
                           />
                         </div>
+                        <p>
+                          <strong>T&amp;C's</strong><br />
+                          *With a minimum order of 1 menu item at your preferred Brotzeit outlet.
+                          Limited to 1 redemption per person on selected beers only, while stock
+                          lasts. This offer is valid until 15 October 2019 unless otherwise stated.
+                          Not valid with any other discounts, promotions, privilege cards or
+                          vouchers. The management reserves the rights to amend the terms and
+                          conditions without any prior notice.
+                        </p>
                       </form>
                     </div>
+                  </div>
+
+                  <div className="text-center pt-5">
+                    <p><strong>Follow us for more exclusive Oktoberfest deals!</strong></p>
+                    <ul className="list-inline social-links">
+                      <li className="list-inline-item"><a href="https://www.facebook.com/brotzeit.co/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                      <li className="list-inline-item"><a href="https://www.instagram.com/brotzeit.sg/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div >
     )
   }
 }

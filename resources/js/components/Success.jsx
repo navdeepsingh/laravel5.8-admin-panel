@@ -9,9 +9,10 @@ class Success extends React.Component {
         <Header />
         <div className="container">
           <div className="row">
-            <div className="col-md-12">
-              <h2>Congrats, You have redeemed successfully.</h2>
-              <p>Enjoy your beer.</p>
+            <div className="col-md-12 text-center py-5">
+              <h1>OKTOBERFEST 2019 FREE BEER<br></br>STAFF REDEMPTION</h1>
+              <p><strong>Success!</strong></p>
+              <p>Redemption successful.</p>
             </div>
           </div>
         </div>

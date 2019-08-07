@@ -7,6 +7,8 @@ import Outlet from './Outlet';
 import Success from './Success';
 import Error from './Error';
 import NotFound from './NotFound';
+import Terms from './Terms';
+import Privacy from './Privacy';
 
 class App extends Component {
     render() {
@@ -18,6 +20,8 @@ class App extends Component {
                     <Route path='/:code/outlet' component={Outlet} />
                     <Route path='/success' component={Success} />
                     <Route path='/error' component={Error} />
+                    <Route path='/terms' component={Terms} />
+                    <Route path='/privacy-policy' component={Privacy} />
                     <Route path='*' exact={true} component={NotFound} />
                 </Switch>
             </BrowserRouter>

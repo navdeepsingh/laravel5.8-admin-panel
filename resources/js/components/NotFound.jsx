@@ -7,7 +7,13 @@ class NotFound extends React.Component {
     return (
       <div>
         <Header />
-        <h1>404: Page Not Found</h1>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12 text-center py-5">
+              <h1>404: Page Not Found</h1>
+            </div>
+          </div>
+        </div>
         <Footer />
       </div>
     )

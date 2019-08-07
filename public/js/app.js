@@ -65497,6 +65497,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Success__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Success */ "./resources/js/components/Success.jsx");
 /* harmony import */ var _Error__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Error */ "./resources/js/components/Error.jsx");
 /* harmony import */ var _NotFound__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./NotFound */ "./resources/js/components/NotFound.jsx");
+/* harmony import */ var _Terms__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Terms */ "./resources/js/components/Terms.jsx");
+/* harmony import */ var _Privacy__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Privacy */ "./resources/js/components/Privacy.jsx");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -65514,6 +65516,8 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
 
 
 
@@ -65555,6 +65559,12 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         path: "/error",
         component: _Error__WEBPACK_IMPORTED_MODULE_7__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/terms",
+        component: _Terms__WEBPACK_IMPORTED_MODULE_9__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/privacy-policy",
+        component: _Privacy__WEBPACK_IMPORTED_MODULE_10__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         path: "*",
         exact: true,
@@ -65624,8 +65634,10 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-md-12"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Error, You have already redeemed before."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Thanks for taking part.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sub_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+        className: "col-md-12 text-center py-5"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "You have previously submitted this form."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Kindly check your email for more details on how to redeem your free beer."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Do not hesitate to email us at ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "mailto:marketing@brotzeit.co"
+      }, "marketing@brotzeit.co"), " if you have any further enquiries.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sub_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
     }
   }]);
 
@@ -65757,7 +65769,13 @@ function (_React$Component) {
   _createClass(NotFound, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sub_components_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "404: Page Not Found"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sub_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sub_components_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-12 text-center py-5"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "404: Page Not Found")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sub_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
     }
   }]);
 
@@ -65840,6 +65858,72 @@ function (_React$Component) {
 
 /***/ }),
 
+/***/ "./resources/js/components/Privacy.jsx":
+/*!*********************************************!*\
+  !*** ./resources/js/components/Privacy.jsx ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _sub_components_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sub-components/Header */ "./resources/js/components/sub-components/Header.jsx");
+/* harmony import */ var _sub_components_Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./sub-components/Footer */ "./resources/js/components/sub-components/Footer.jsx");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+var Terms =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Terms, _React$Component);
+
+  function Terms() {
+    _classCallCheck(this, Terms);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Terms).apply(this, arguments));
+  }
+
+  _createClass(Terms, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sub_components_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row py-3"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-12"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Privacy Policy"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Brotzeit Oktoberfest Free Beer Campaign 2019"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "This offer is valid until 15th October 2019 only, unless otherwise stated. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Offer is valid only with a minimum order of 1 menu item per redemption. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Redemption is limited to 1 redemption per person on selected beers only, while stocks last. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Redemption is valid solely in-person at any of Brotzeit\u2019s outlets and for dine-in only:", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit Vivocity"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit Raffles City"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit Westgate"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit Katong"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit 313 Somerset"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "This promotion is not valid with any other discounts, promotions, privilege cards or vouchers. The management reserves the rights to amend the terms and conditions without any prior notice."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit Pte Ltd reserves the right to request for proof of identification at point of redemption and reserves the sole and absolute right to disqualify any participant or reject participants deemed ineligible for the promotion (be it under these Terms & Conditions or has engaged in a conduct that the organiser considers inappropriate or unacceptable). "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit Pte Ltd reserves the sole and absolute right to alter or end the offer at anytime, without giving prior notice or compensate in cash or in kind."))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sub_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+    }
+  }]);
+
+  return Terms;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Terms);
+
+/***/ }),
+
 /***/ "./resources/js/components/Success.jsx":
 /*!*********************************************!*\
   !*** ./resources/js/components/Success.jsx ***!
@@ -65894,8 +65978,8 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-md-12"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Congrats, You have redeemed successfully."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Enjoy your beer.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sub_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+        className: "col-md-12 text-center py-5"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "OKTOBERFEST 2019 FREE BEER", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "STAFF REDEMPTION"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Success!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Redemption successful.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sub_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
     }
   }]);
 
@@ -65903,6 +65987,72 @@ function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Success);
+
+/***/ }),
+
+/***/ "./resources/js/components/Terms.jsx":
+/*!*******************************************!*\
+  !*** ./resources/js/components/Terms.jsx ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _sub_components_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sub-components/Header */ "./resources/js/components/sub-components/Header.jsx");
+/* harmony import */ var _sub_components_Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./sub-components/Footer */ "./resources/js/components/sub-components/Footer.jsx");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+var Terms =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Terms, _React$Component);
+
+  function Terms() {
+    _classCallCheck(this, Terms);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Terms).apply(this, arguments));
+  }
+
+  _createClass(Terms, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sub_components_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row py-3"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-12"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Terms & Condtions"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Brotzeit Oktoberfest Free Beer Campaign 2019"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "This offer is valid until 15th October 2019 only, unless otherwise stated. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Offer is valid only with a minimum order of 1 menu item per redemption. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Redemption is limited to 1 redemption per person on selected beers only, while stocks last. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Redemption is valid solely in-person at any of Brotzeit\u2019s outlets and for dine-in only:", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit Vivocity"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit Raffles City"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit Westgate"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit Katong"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit 313 Somerset"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "This promotion is not valid with any other discounts, promotions, privilege cards or vouchers. The management reserves the rights to amend the terms and conditions without any prior notice."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit Pte Ltd reserves the right to request for proof of identification at point of redemption and reserves the sole and absolute right to disqualify any participant or reject participants deemed ineligible for the promotion (be it under these Terms & Conditions or has engaged in a conduct that the organiser considers inappropriate or unacceptable). "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit Pte Ltd reserves the sole and absolute right to alter or end the offer at anytime, without giving prior notice or compensate in cash or in kind."))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sub_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+    }
+  }]);
+
+  return Terms;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Terms);
 
 /***/ }),
 
@@ -65960,8 +66110,69 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-md-12"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Thanks for Submission"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "You will get email shortly")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sub_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+        className: "col-md-12 text-center py-5"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-12 text-center py-2"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Thanks you!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Please check your email for more details on how to redeem your free beer."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Do allow up to 15 minutes for our email to reach you. Remember to check your junk filters and add ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "mailto:marketing@brotzeit.co"
+      }, "marketing@brotzeit.co"), " to your safe senders list."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Share the free drink with a friend!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "list-inline social-links"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "list-inline-item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "https://www.facebook.com/brotzeit.co/",
+        target: "_blank"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        "class": "fa fa-facebook"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "list-inline-item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "https://www.instagram.com/brotzeit.sg/",
+        target: "_blank"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        "class": "fa fa-instagram"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "list-inline-item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "mailto:marketing@brotzeit.co",
+        target: "_blank"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        "class": "fa fa-envelope"
+      })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "BOOK YOUR TABLE TODAY!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://brotzeit.co/reservation/?utm_source=microsite&utm_medium=referral&utm_campaign=free_beer%20&utm_content=thankyou_page",
+        target: "_blank",
+        className: "btn btn-primary"
+      }, "BOOK NOW"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "py-2"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://brotzeit.co/promotion/oktoberfest-2019/?utm_source=microsite&utm_medium=referral&utm_campaign=free_beer%20&utm_content=thankyou_page",
+        target: "_blank"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "./images/2019-08-06_Brotzeit_OktoBeerCampaignThankYouPage_PromoBanner_RO.jpg"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Click ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "http://brotzeit.co/promotion/oktoberfest-2019/?utm_source=microsite&utm_medium=referral&utm_campaign=free_beer%20&utm_content=thankyou_page",
+        target: "_blank"
+      }, "here"), " for more information on Oktoberfest Celebrations @ Brotzeit!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text-center pt-5"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Follow us for more exclusive Oktoberfest deals!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "list-inline social-links"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "list-inline-item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "https://www.facebook.com/brotzeit.co/",
+        target: "_blank"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        "class": "fa fa-facebook"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "list-inline-item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "https://www.instagram.com/brotzeit.sg/",
+        target: "_blank"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        "class": "fa fa-instagram"
+      })))))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sub_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
     }
   }]);
 
@@ -66087,7 +66298,7 @@ function (_React$Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "img-fluid",
-        src: "images/2019-08-06_Brotzeit_OktoBeerCampaignSubmissionPage_MainHeader_RO.jpg"
+        src: "./images/2019-08-06_Brotzeit_OktoBeerCampaignSubmissionPage_MainHeader_RO.jpg"
       }));
     }
   }]);
@@ -66210,12 +66421,14 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row justify-content-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-md-12"
+        className: "col-md-6 py-5"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "OKTOBERFEST 2019 FREE BEER", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "STAFF REDEMPTION"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Dear"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "To redeem your free beer, please pass your phone to a staff member to key in the outlet redemption code below.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-header"
-      }, "STAFF REDEMPTION"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "For staff redemption purposes only"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         method: "POST",
@@ -66363,14 +66576,20 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container"
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "home"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row py-5"
+        className: "container-fluid"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row pb-5"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-md-12"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row justify-content-center"
+        className: "intro row py-3 justify-content-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-md-6 text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Get your free beer* at Brotzeit this Oktoberfest!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Step 1: Fill in the form below", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Step 2: Look out for an email from Brotzeit", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Step 3: Head to your nearest Brotzeit outlet from", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "3 Sep - 15 Oct 2019 to redeem!"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row justify-content-center pt-5"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-md-6"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -66430,12 +66649,10 @@ function (_React$Component) {
         id: "beer",
         className: "form-control"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-        value: ""
-      }, "Beer 1"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-        value: ""
-      }, "Beer 2"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-        value: ""
-      }, "Beer 3")), this.renderErrorFor('beer')), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        value: "Hacker-Pschorr Original Oktoberfest Amber M\xE4rzen"
+      }, "Hacker-Pschorr Original Oktoberfest Amber M\xE4rzen"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+        value: "Hacker-Pschorr Weisse (Weissbier)"
+      }, "Hacker-Pschorr Weisse (Weissbier)")), this.renderErrorFor('beer')), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "form-group form-check"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "checkbox",
@@ -66447,13 +66664,31 @@ function (_React$Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         className: "form-check-label",
         htmlFor: "opt_in"
-      }, "Opt In")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Sign up for Brotzeit's mailing list to receive exclusive promotions and more!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "form-group"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "submit",
         value: this.state.loading ? 'Loading...' : 'Submit',
         className: "btn btn-primary",
         disabled: this.state.loading
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "T&C's"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "*With a minimum order of 1 menu item at your preferred Brotzeit outlet. Limited to 1 redemption per person on selected beers only, while stock lasts. This offer is valid until 15 October 2019 unless otherwise stated. Not valid with any other discounts, promotions, privilege cards or vouchers. The management reserves the rights to amend the terms and conditions without any prior notice.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text-center pt-5"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Follow us for more exclusive Oktoberfest deals!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "list-inline social-links"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "list-inline-item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "https://www.facebook.com/brotzeit.co/",
+        target: "_blank"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        "class": "fa fa-facebook"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "list-inline-item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "https://www.instagram.com/brotzeit.sg/",
+        target: "_blank"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        "class": "fa fa-instagram"
       })))))))))));
     }
   }]);

@@ -10644,12 +10644,76 @@ a.text-dark:focus {
   }
 }
 
+@font-face {
+  font-family: Futura;
+  src: url(/fonts/FuturaStd-Medium_0.otf?95893071b7f2a535226f5e0c2c1c40c9) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Futura", serif;
+}
+
 .invalid-feedback {
   display: block !important;
+}
+
+.btn {
+  background-color: #4F2C1D;
+  color: white;
+  border-color: #4F2C1D;
+}
+
+.btn:hover {
+  background-color: #4F2C1D;
+  border-color: #4F2C1D;
+  color: #FEC524;
+}
+
+.home .intro {
+  background-color: #CBA052;
+}
+
+.social-links a {
+  background-color: #4F2C1D;
+  padding: 10px 17px;
+  color: white;
+  font-size: 1.5em;
+}
+
+.social-links a:hover {
+  color: #FEC524;
 }
 
 footer {
   background-color: #4F2C1D;
   color: white;
+}
+
+footer ul {
+  margin-bottom: 0.2em;
+}
+
+footer ul li a {
+  color: white;
+  position: relative;
+  padding-right: 6px;
+}
+
+footer ul li a::after {
+  position: absolute;
+  right: 0;
+  content: "|";
+  width: 1px;
+}
+
+footer ul li a:hover {
+  color: #FEC524;
+  text-decoration: underline;
+}
+
+footer ul li:last-child ::after {
+  content: "";
 }
 

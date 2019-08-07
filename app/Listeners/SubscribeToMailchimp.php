@@ -30,7 +30,7 @@ class SubscribeToMailchimp
         $this->mailchimp->lists->subscribe(
       env('MAILCHIMP_LIST_ID'),
       ['email' => $event->signup->email],
-      ['NAME' => $event->signup->name, 'PHONE' => $event->signup->phone, 'REDEEMCODE' => $event->signup->redemption()->redeem_code],
+      ['NAME' => $event->signup->name, 'PHONE' => $event->signup->phone, 'REDEEMCODE' => $event->signup->redemption->redeem_code],
       null,
       false
   );

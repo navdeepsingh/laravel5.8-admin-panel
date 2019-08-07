@@ -11,6 +11,7 @@
 |
 */
 
+
 // Reactjs Routes
 Route::get('{reactRoutes}', function () {
     return view('layouts.react'); // your start view

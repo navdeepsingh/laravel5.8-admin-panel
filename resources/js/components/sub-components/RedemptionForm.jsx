@@ -73,9 +73,14 @@ class RedemptionForm extends React.Component {
       <div>
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-md-12">
+            <div className="col-md-6 py-5">
+              <div className="text-center">
+                <h1>OKTOBERFEST 2019 FREE BEER<br></br>STAFF REDEMPTION</h1>
+                <p>Dear</p>
+                <p>To redeem your free beer, please pass your phone to a staff member to key in the outlet redemption code below.</p>
+              </div>
               <div className="card">
-                <div className="card-header">STAFF REDEMPTION</div>
+                <div className="card-header">For staff redemption purposes only</div>
                 <div className="card-body">
                   <form method="POST" action="/signup" onSubmit={this.onSubmitHandle}>
                     <div className="form-group">

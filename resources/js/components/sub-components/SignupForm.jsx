@@ -146,8 +146,8 @@ class SignupForm extends React.Component {
                   <div className="text-center pt-5">
                     <p><strong>Follow us for more exclusive Oktoberfest deals!</strong></p>
                     <ul className="list-inline social-links">
-                      <li className="list-inline-item"><a href="https://www.facebook.com/brotzeit.co/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                      <li className="list-inline-item"><a href="https://www.instagram.com/brotzeit.sg/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                      <li className="list-inline-item"><a href="https://www.facebook.com/brotzeit.co/" target="_blank"><i className="fa fa-facebook"></i></a></li>
+                      <li className="list-inline-item"><a href="https://www.instagram.com/brotzeit.sg/" target="_blank"><i className="fa fa-instagram"></i></a></li>
                     </ul>
                   </div>
                 </div>

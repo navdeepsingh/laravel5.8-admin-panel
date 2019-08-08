@@ -27,12 +27,17 @@ class SubscribeToMailchimp
      */
     public function handle(SignupEvent $event)
     {
+
         $this->mailchimp->lists->subscribe(
-      env('MAILCHIMP_LIST_ID'),
-      ['email' => $event->signup->email],
-      ['NAME' => $event->signup->name, 'PHONE' => $event->signup->phone, 'REDEEMCODE' => $event->signup->redemption->redeem_code],
-      null,
-      false
-  );
+            env('MAILCHIMP_LIST_ID'),
+            ['email' => $event->signup->email],
+            ['NAME' => $event->signup->name, 
+            'PHONE' => $event->signup->phone, 
+            'REDEEMCODE' => $event->signup->redemption->redeem_code, 
+            'OPTIN' => $event->signup->opt_in === 1 ? 'Yes' : 'No'],
+            null,
+            false
+        );
+
     }
 }

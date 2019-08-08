@@ -13,7 +13,7 @@ class Thanks extends React.Component {
 
               <div className="row">
                 <div className="col-md-12 text-center py-2">
-                  <h2>Thanks you!</h2>
+                  <h2>Thank you!</h2>
                   <p>Please check your email for more details on how to redeem your free beer.</p>
                   <p>Do allow up to 15 minutes for our email to reach you. Remember to check your junk filters and add <a href="mailto:marketing@brotzeit.co">marketing@brotzeit.co</a> to your safe senders list.</p>
                   <p>Share the free drink with a friend!</p>
@@ -33,7 +33,6 @@ class Thanks extends React.Component {
                       <li className="list-inline-item"><a href="https://www.instagram.com/brotzeit.sg/" target="_blank"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                   </div>
-
 
                 </div>
               </div>

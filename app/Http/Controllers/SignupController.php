@@ -53,9 +53,7 @@ class SignupController extends Controller
         $redemption->redeem_code = Str::random(5);
         $signup->redemption()->save($redemption);
 
-        if ($request->opt_in) {
-            event(new SignupEvent($signup));
-        }
+        event(new SignupEvent($signup));
 
         return response()->json($signup);
     }

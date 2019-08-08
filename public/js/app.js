@@ -60512,7 +60512,7 @@ if (false) {} else {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
+/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66115,7 +66115,7 @@ function (_React$Component) {
         className: "row"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-md-12 text-center py-2"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Thanks you!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Please check your email for more details on how to redeem your free beer."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Do allow up to 15 minutes for our email to reach you. Remember to check your junk filters and add ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Thank you!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Please check your email for more details on how to redeem your free beer."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Do allow up to 15 minutes for our email to reach you. Remember to check your junk filters and add ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "mailto:marketing@brotzeit.co"
       }, "marketing@brotzeit.co"), " to your safe senders list."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Share the free drink with a friend!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "list-inline social-links"
@@ -66633,7 +66633,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         htmlFor: "phone"
       }, "Contact No"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "text",
+        type: "number",
         ref: this.phone,
         className: "form-control",
         id: "phone",
@@ -66681,14 +66681,14 @@ function (_React$Component) {
         href: "https://www.facebook.com/brotzeit.co/",
         target: "_blank"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        "class": "fa fa-facebook"
+        className: "fa fa-facebook"
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "list-inline-item"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "https://www.instagram.com/brotzeit.sg/",
         target: "_blank"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        "class": "fa fa-instagram"
+        className: "fa fa-instagram"
       })))))))))));
     }
   }]);

@@ -5,19 +5,30 @@ class RedemptionForm extends React.Component {
 
   constructor(props) {
     super(props);
-    console.log(this.props);
   }
 
   outlet = React.createRef();
 
   state = {
-    errors: []
+    errors: [],
+    participant_name: ''
   }
 
   componentWillMount() {
     this.setState({
       errors: []
-    })
+    });
+    const props = this.props.propsPassed;
+    const code = props.match.params.code;
+    axios.get(`/api/redeem_code/${code}`)
+      .then(response => {
+        this.setState({
+          participant_name: response.data
+        });
+      })
+      .catch(error => {
+        console.log(error);
+      })
   }
 
   onSubmitHandle = (e) => {
@@ -25,6 +36,7 @@ class RedemptionForm extends React.Component {
 
     const props = this.props.propsPassed;
     const code = props.match.params.code;
+
 
     const
       redeem = {
@@ -76,7 +88,7 @@ class RedemptionForm extends React.Component {
             <div className="col-md-6 py-5">
               <div className="text-center">
                 <h1>OKTOBERFEST 2019 FREE BEER<br></br>STAFF REDEMPTION</h1>
-                <p>Dear</p>
+                <p>Dear {this.state.participant_name}</p>
                 <p>To redeem your free beer, please pass your phone to a staff member to key in the outlet redemption code below.</p>
               </div>
               <div className="card">

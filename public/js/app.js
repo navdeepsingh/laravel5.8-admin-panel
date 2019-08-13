@@ -66371,7 +66371,8 @@ function (_React$Component) {
     _defineProperty(_assertThisInitialized(_this), "outlet", react__WEBPACK_IMPORTED_MODULE_0___default.a.createRef());
 
     _defineProperty(_assertThisInitialized(_this), "state", {
-      errors: []
+      errors: [],
+      participant_name: ''
     });
 
     _defineProperty(_assertThisInitialized(_this), "onSubmitHandle", function (e) {
@@ -66412,15 +66413,25 @@ function (_React$Component) {
       }
     });
 
-    console.log(_this.props);
     return _this;
   }
 
   _createClass(RedemptionForm, [{
     key: "componentWillMount",
     value: function componentWillMount() {
+      var _this2 = this;
+
       this.setState({
         errors: []
+      });
+      var props = this.props.propsPassed;
+      var code = props.match.params.code;
+      axios.get("/api/redeem_code/".concat(code)).then(function (response) {
+        _this2.setState({
+          participant_name: response.data
+        });
+      })["catch"](function (error) {
+        console.log(error);
       });
     }
   }, {
@@ -66434,7 +66445,7 @@ function (_React$Component) {
         className: "col-md-6 py-5"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "text-center"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "OKTOBERFEST 2019 FREE BEER", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "STAFF REDEMPTION"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Dear"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "To redeem your free beer, please pass your phone to a staff member to key in the outlet redemption code below.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "OKTOBERFEST 2019 FREE BEER", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "STAFF REDEMPTION"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Dear ", this.state.participant_name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "To redeem your free beer, please pass your phone to a staff member to key in the outlet redemption code below.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-header"

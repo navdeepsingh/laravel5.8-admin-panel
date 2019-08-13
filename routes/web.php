@@ -21,6 +21,7 @@ Route::get('{reactRoutes}', function () {
 Route::group(['prefix' => 'api'], function () {
     Route::post('/signup', 'SignupController@store')->name('signup');
     Route::post('/redeem', 'SignupRedemptionController@redeem');
+    Route::get('/redeem_code/{code}', 'SignupRedemptionController@getRedeem');
 });
 
 

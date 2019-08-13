@@ -12,7 +12,7 @@ class Redemption extends Model
     /**
      * Get the signup that owns the redemption.
      */
-    public function user()
+    public function signup()
     {
         return $this->belongsTo('App\Signup');
     }

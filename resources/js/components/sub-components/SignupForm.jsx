@@ -30,7 +30,7 @@ class SignupForm extends React.Component {
       loading: true
     });
 
-    const { history } = this.props.propsPassed;
+    const history = this.props.propsPassed;
 
     const signup = {
       name: this.name.current.value,
@@ -49,6 +49,8 @@ class SignupForm extends React.Component {
         }
       })
       .catch(error => {
+        console.log(error);
+
         this.setState({
           errors: error.response.data.errors,
           loading: false

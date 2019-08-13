@@ -10,8 +10,8 @@ class Terms extends React.Component {
         <div className="container">
           <div className="row py-3">
             <div className="col-md-12">
-              <h2>Terms &amp; Condtions</h2>
-              <h3>Brotzeit Oktoberfest Free Beer Campaign 2019</h3>
+              <h1>Terms &amp; Condtions</h1>
+              <h2>Brotzeit Oktoberfest Free Beer Campaign 2019</h2>
               <ol>
                 <li>This offer is valid until 15th October 2019 only, unless otherwise stated. </li>
                 <li>Offer is valid only with a minimum order of 1 menu item per redemption. </li>

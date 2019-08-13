@@ -10,6 +10,7 @@ class Terms extends React.Component {
         <div className="container">
           <div className="row py-3">
             <div className="col-md-12">
+              <h1>Privacy Policy</h1>
               <h2>PDPA</h2>
               <p>This is the Brotzeit Pte Ltd Personal Data Protection Policy (“Personal Data Protection Policy”) and the purpose of this document is to inform you of Brotzeit Pte Ltd manages, collects, uses and discloses your Personal Data, which is subject to the Singapore Personal Data Protection Act (2012) (“the Act”). This Privacy Policy outlines Brotzeit Pte Ltd’s policy and responsibility in relation to the collection, use and disclosure of Customer Data.</p>
               <p>By continuing to use Brotzeit Pte Ltd’s services, you signify that you have read, understood and agree to be bound by this Privacy Policy as amended from time to time in respect of Brotzeit Pte Ltd’s collection, use and disclosure of your Customer Data. This Privacy Policy is divided into two Parts – A and B:</p>

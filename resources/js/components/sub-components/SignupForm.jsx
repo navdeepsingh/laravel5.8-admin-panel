@@ -45,7 +45,7 @@ class SignupForm extends React.Component {
       .then(response => {
         if (response.status == 200) {
           // redirect to the thanks
-          history.push('/thanks');
+          history.push('/thanks#top');
         }
       })
       .catch(error => {
@@ -82,7 +82,7 @@ class SignupForm extends React.Component {
           <div className="row pb-5">
             <div className="col-md-12">
 
-              <div className="intro row py-3 justify-content-center">
+              <div className="intro row py-4 justify-content-center">
                 <div className="col-md-6 text-center">
                   <h2>Get your free beer* at Brotzeit this Oktoberfest!</h2>
                   <p>
@@ -96,7 +96,6 @@ class SignupForm extends React.Component {
               <div className="row justify-content-center pt-5">
                 <div className="col-md-6">
                   <div className="card">
-                    <div className="card-header">Signup</div>
                     <div className="card-body">
                       <form method="POST" action="/signup" onSubmit={this.onSubmitHandle}>
                         <div className="form-group">

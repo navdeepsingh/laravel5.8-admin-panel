@@ -53,6 +53,7 @@ class SignupController extends Controller
         $redemption->redeem_code = Str::random(5);
         $signup->redemption()->save($redemption);
 
+        // Trigger event for Mailchimp
         event(new SignupEvent($signup));
 
         return response()->json($signup);

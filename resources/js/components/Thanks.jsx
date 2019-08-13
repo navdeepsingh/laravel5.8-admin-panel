@@ -19,7 +19,8 @@ class Thanks extends React.Component {
                   <p>Share the free drink with a friend!</p>
                   <ul className="list-inline social-links">
                     <li className="list-inline-item"><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Foktoberfest.brotzeit.co&amp;src=website" target="_blank"><i className="fa fa-facebook"></i></a></li>
-                    <li className="list-inline-item"><a href="https://www.instagram.com/brotzeit.sg/" target="_blank"><i className="fa fa-instagram"></i></a></li>
+                    <li className="list-inline-item"><a href="https://twitter.com/intent/tweet?text=Grab yours and head to Brotzeit for the Oktoberfest party of the year! @oktoberfest"
+                      rel="noopener" target="_blank"><i className="fa fa-twitter"></i></a></li>
                     <li className="list-inline-item"><a href="mailto:marketing@brotzeit.co" target="_blank"><i className="fa fa-envelope"></i></a></li>
                   </ul>
                   <p><strong>BOOK YOUR TABLE TODAY!</strong></p>
@@ -41,7 +42,7 @@ class Thanks extends React.Component {
           </div>
         </div>
         <Footer />
-      </div>
+      </div >
     )
   }
 }

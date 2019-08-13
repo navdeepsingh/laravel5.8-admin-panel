@@ -60512,7 +60512,7 @@ if (false) {} else {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66133,10 +66133,11 @@ function (_React$Component) {
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "list-inline-item"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "https://www.instagram.com/brotzeit.sg/",
+        href: "https://twitter.com/intent/tweet?text=Grab yours and head to Brotzeit for the Oktoberfest party of the year! @oktoberfest",
+        rel: "noopener",
         target: "_blank"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fa fa-instagram"
+        className: "fa fa-twitter"
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "list-inline-item"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -66301,10 +66302,14 @@ function (_React$Component) {
   _createClass(Header, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "img-fluid",
-        src: "./images/2019-08-06_Brotzeit_OktoBeerCampaignSubmissionPage_MainHeader_RO.jpg"
-      }));
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "/",
+        id: "top"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "img-fluid header-image",
+        src: "./images/2019-08-06_Brotzeit_OktoBeerCampaignSubmissionPage_MainHeader_RO.jpg",
+        alt: "FREEBEER - GRAB YOURS AND HEAD TO BROTZEIT FOR THE OKTOBERFEST PARTY OF THE YEAR!"
+      })));
     }
   }]);
 
@@ -66545,7 +66550,7 @@ function (_React$Component) {
       axios.post('/api/signup', signup).then(function (response) {
         if (response.status == 200) {
           // redirect to the thanks
-          history.push('/thanks');
+          history.push('/thanks#top');
         }
       })["catch"](function (error) {
         console.log(error);
@@ -66592,7 +66597,7 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-md-12"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "intro row py-3 justify-content-center"
+        className: "intro row py-4 justify-content-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-md-6 text-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Get your free beer* at Brotzeit this Oktoberfest!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Step 1: Fill in the form below", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Step 2: Look out for an email from Brotzeit", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Step 3: Head to your nearest Brotzeit outlet from", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "3 Sep - 15 Oct 2019 to redeem!"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -66602,8 +66607,6 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "card-header"
-      }, "Signup"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         method: "POST",

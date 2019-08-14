@@ -117,29 +117,37 @@ class UsersController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $user = User::findOrFail($id);
+        $redirect = 'admin/profile/' . $id;
+
         $this->validate(
             $request,
             [
                 'name' => 'required',
                 'email' => 'required|string|max:255|email|unique:users,email,' . $id,
-                'roles' => 'required'
+                'roles' => $user->can("super-admin") ? 'required' : 'nullable'
             ]
         );
 
+        
+
         $data = $request->except('password');
-        if ($request->has('password')) {
+        if ($request->has('password') && $request->password !== null) {
             $data['password'] = bcrypt($request->password);
         }
 
-        $user = User::findOrFail($id);
+        
         $user->update($data);
 
-        $user->roles()->detach();
-        foreach ($request->roles as $role) {
-            $user->assignRole($role);
+        if ($user->can("super-admin")) {
+            $user->roles()->detach();
+            foreach ($request->roles as $role) {
+                $user->assignRole($role);
+            }
+            $redirect = 'admin/users';
         }
 
-        return redirect('admin/users')->with('flash_message', 'User updated!');
+        return redirect($redirect)->with('flash_message', 'User updated!');
     }
 
     /**

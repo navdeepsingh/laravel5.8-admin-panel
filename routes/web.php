@@ -30,6 +30,7 @@ Auth::routes(['register' => false]);
 Route::get('admin', 'Admin\AdminController@index');
 Route::group(['middleware' => ['auth']], function () {
     Route::resource('admin/users', 'Admin\UsersController');
+    Route::get('admin/profile/{id}', 'Admin\UsersController@edit');
     Route::view('admin/unauthorized', 'admin.unauthorized');
 });
 // Super Admin Roles

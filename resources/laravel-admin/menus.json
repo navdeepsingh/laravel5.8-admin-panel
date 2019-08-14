@@ -27,19 +27,6 @@
         {
           "title": "Permissions",
           "url": "\/admin\/permissions"
-        },
-        {
-          "title": "Pages",
-          "url": "\/admin\/pages"
-        }
-      ]
-    },
-    {
-      "section": "Tools",
-      "items": [
-        {
-          "title": "Generator",
-          "url": "\/admin\/generator"
         }
       ]
     }

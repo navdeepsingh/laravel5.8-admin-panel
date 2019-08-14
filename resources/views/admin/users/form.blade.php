@@ -19,10 +19,12 @@
     {!! Form::password('password', $passwordOptions) !!}
     {!! $errors->first('password', '<p class="help-block">:message</p>') !!}
 </div>
+@if (Auth::user()->hasRole('super-admin'))
 <div class="form-group{{ $errors->has('roles') ? ' has-error' : ''}}">
     {!! Form::label('role', 'Role: ', ['class' => 'control-label']) !!}
     {!! Form::select('roles[]', $roles, isset($user_roles) ? $user_roles : [], ['class' => 'form-control', 'multiple' => true]) !!}
 </div>
+@endif
 <div class="form-group">
     {!! Form::submit($formMode === 'edit' ? 'Update' : 'Create', ['class' => 'btn btn-primary']) !!}
 </div>

@@ -88,8 +88,7 @@ class SignupForm extends React.Component {
                   <p>
                     Step 1: Fill in the form below<br />
                     Step 2: Look out for an email from Brotzeit<br />
-                    Step 3: Head to your nearest Brotzeit outlet from<br />
-                    3 Sep - 15 Oct 2019 to redeem!
+                    Step 3: Head to your nearest Brotzeit outlet from 3 Sep - 15 Oct 2019 to redeem!
                     </p>
                 </div>
               </div>
@@ -115,10 +114,10 @@ class SignupForm extends React.Component {
                           {this.renderErrorFor('phone')}
                         </div>
                         <div className="form-group">
-                          <label htmlFor="beer">Preffered Beer</label>
+                          <label htmlFor="beer">Preferred Beer</label>
                           <select name="beer" ref={this.beer} id="beer" className="form-control">
-                            <option value="Hacker-Pschorr Original Oktoberfest Amber Märzen">Hacker-Pschorr Original Oktoberfest Amber Märzen</option>
-                            <option value="Hacker-Pschorr Weisse (Weissbier)">Hacker-Pschorr Weisse (Weissbier)</option>
+                            <option value="HB Original Oktoberfest Märzen Beer">HB Original Oktoberfest Märzen Beer</option>
+                            <option value="HB Weisse Beer">HB Weisse Beer</option>
                           </select>
                           {this.renderErrorFor('beer')}
                         </div>
@@ -132,7 +131,7 @@ class SignupForm extends React.Component {
                           />
                         </div>
                         <p>
-                          <strong>T&amp;C's</strong><br />
+                          <strong>T&amp;Cs</strong><br />
                           *With a minimum order of 1 menu item at your preferred Brotzeit outlet.
                           Limited to 1 redemption per person on selected beers only, while stock
                           lasts. This offer is valid until 15 October 2019 unless otherwise stated.

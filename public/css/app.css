@@ -10651,6 +10651,13 @@ a.text-dark:focus {
   font-style: normal;
 }
 
+@font-face {
+  font-family: Futura-bold;
+  src: url(/fonts/FuturaStd-Bold_0.otf?f7339bec7d6baa9a4bf184e63bf013dd) format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
   font-family: "Futura", serif;
 }
@@ -10663,6 +10670,11 @@ body {
 
 .invalid-feedback {
   display: block !important;
+}
+
+.book-now {
+  color: #4F2C1D;
+  font-family: Futura-bold;
 }
 
 .btn {

@@ -4,6 +4,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: Futura-bold;
+  src: url("../fonts/FuturaStd-Bold_0.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 
 body{
   font-family: 'Futura', serif;
@@ -15,6 +22,10 @@ body{
 }
 .invalid-feedback {
   display: block !important;
+}
+.book-now{
+  color: $darkbrown;
+  font-family: Futura-bold;
 }
 .btn {
   background-color: $darkbrown;

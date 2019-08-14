@@ -34,7 +34,7 @@ class SubscribeToMailchimp
             ['NAME' => $event->signup->name, 
             'PHONE' => $event->signup->phone,
             'BEER' => $event->signup->beer,
-            'REDEEMCODE' => $event->signup->redemption->redeem_code, 
+            'REDEEMCODE' => env('APP_URL') . '/' . $event->signup->redemption->redeem_code . '/outlet', 
             'OPTIN' => $event->signup->opt_in === 1 ? 'Yes' : 'No'],
             null,
             false

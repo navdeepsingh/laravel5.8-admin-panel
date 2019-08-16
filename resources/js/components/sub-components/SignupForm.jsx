@@ -76,8 +76,6 @@ class SignupForm extends React.Component {
     return (
       <div className="home">
 
-
-
         <div className="container-fluid">
           <div className="row pb-5">
             <div className="col-md-12">

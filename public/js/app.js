@@ -66133,7 +66133,7 @@ function (_React$Component) {
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "list-inline-item"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "https://twitter.com/intent/tweet?text=Original Oktoberfest beer imported from Germany - while stocks last! http%3A%2F%2Foktoberfest.brotzeit.co",
+        href: "https://twitter.com/intent/tweet?text=Original%20Oktoberfest%20beer%20imported%20from%20Germany%20-%20while%20stocks%20last!%20http%3A%2F%2Foktoberfest.brotzeit.co",
         rel: "noopener",
         target: "_blank"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
@@ -66141,7 +66141,7 @@ function (_React$Component) {
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "list-inline-item"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "mailto:?subject=Hey there, here\u2019s a free beer!&body=Come join me at Brotzeit for a free mug of original Oktoberfest beer! Visit http://oktoberfest.brotzeit.co/redemption to redeem it now.",
+        href: "mailto:enteryourfriend@addresshere?subject=Hey there, here\u2019s a free beer!&body=Come join me at Brotzeit for a free mug of original Oktoberfest beer! Visit http://oktoberfest.brotzeit.co/redemption to redeem it now.",
         target: "_blank"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-envelope"
@@ -66152,6 +66152,11 @@ function (_React$Component) {
         target: "_blank",
         className: "btn btn-primary"
       }, "BOOK NOW"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "py-2"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: "./images/2019-08-14_Brotzeit_OktoBeerThankYou_MainHeader_RO.jpg",
+        className: "img-fluid"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "py-2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "http://brotzeit.co/promotion/oktoberfest-2019/?utm_source=microsite&utm_medium=referral&utm_campaign=free_beer%20&utm_content=thankyou_page",
@@ -66304,7 +66309,9 @@ function (_React$Component) {
   _createClass(Header, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
+        className: "text-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/",
         id: "top"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {

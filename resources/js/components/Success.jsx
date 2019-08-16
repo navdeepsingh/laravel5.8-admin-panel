@@ -7,17 +7,17 @@ class Success extends React.Component {
     return (
       <div>
         <Header />
-        <div className="container">
+        <div className="container success">
           <div className="row">
             <div className="col-md-12 text-center py-5">
-              <h1>OKTOBERFEST 2019 FREE BEER<br></br>STAFF REDEMPTION</h1>
-              <p><strong>Success!</strong></p>
+              <h1>OKTOBERFEST 2019 <br />FREE BEER REDEMPTION</h1>
+              <h2>Success!</h2>
               <p>Redemption successful.</p>
             </div>
           </div>
         </div>
         <Footer />
-      </div>
+      </div >
     )
   }
 }

@@ -10721,6 +10721,10 @@ select:not([multiple]) {
   margin: 0;
 }
 
+.success h2 {
+  color: #4F2C1D;
+}
+
 .social-links a {
   background-color: #4F2C1D;
   padding: 10px 12px;

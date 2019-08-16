@@ -69,6 +69,11 @@ select:not([multiple]) {
     }
   }
 }
+.success {
+  h2 {
+    color: $darkbrown;
+  }
+}
 .social-links{
   a {
     background-color: $darkbrown;

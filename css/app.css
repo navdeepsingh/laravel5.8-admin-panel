@@ -10662,6 +10662,10 @@ body {
   font-family: "Futura", serif;
 }
 
+header {
+  background-color: #000b07;
+}
+
 .header-image:focus {
   outline: none;
   text-decoration: none;

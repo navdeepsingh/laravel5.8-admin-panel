@@ -65978,12 +65978,12 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sub_components_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container"
+        className: "container success"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-md-12 text-center py-5"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "OKTOBERFEST 2019 FREE BEER", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "STAFF REDEMPTION"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Success!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Redemption successful.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sub_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "OKTOBERFEST 2019 ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "FREE BEER REDEMPTION"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Success!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Redemption successful.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sub_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
     }
   }]);
 

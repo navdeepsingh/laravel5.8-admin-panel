@@ -9,7 +9,7 @@
     <!-- FB OG Tags -->
     <meta property="og:url"           content="http://oktoberfest.brotzeit.co" />
     <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="Get yours today! / Get your free beer!" />
+    <meta property="og:title"         content="Get your free beer!" />
     <meta property="og:description"   content="Original Oktoberfest beer imported from Germany - while stocks last!" />
     <meta property="og:image"         content="{{ env('APP_URL') }}/images/Social-Share.jpg" />
     <!-- Twitter Tags -->

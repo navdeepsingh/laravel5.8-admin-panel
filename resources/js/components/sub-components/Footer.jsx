@@ -5,7 +5,7 @@ class Footer extends React.Component {
     return (
       <footer className="text-center py-2">
         <ul className="list-inline">
-          <li className="list-inline-item"><a href="/terms">T&amp;C's</a></li>
+          <li className="list-inline-item"><a href="/terms">Terms &amp; Conditions</a></li>
           <li className="list-inline-item"><a href="/privacy-policy">Privacy Policy</a></li>
         </ul>
         <div>

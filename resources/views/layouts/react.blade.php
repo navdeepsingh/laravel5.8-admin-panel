@@ -11,14 +11,14 @@
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="Get yours today! / Get your free beer!" />
     <meta property="og:description"   content="Original Oktoberfest beer imported from Germany - while stocks last!" />
-    <meta property="og:image"         content="{{ env('APP_URL') }}/images/FBShare.jpg" />
+    <meta property="og:image"         content="{{ env('APP_URL') }}/images/Social-Share.jpg" />
     <!-- Twitter Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@Brotzeit_SG">
     <meta name="twitter:creator" content="@Brotzeit_SG">
-    <meta name="twitter:title" content="Get yours today! / Get your free beer!">
+    <meta name="twitter:title" content="Get your free beer!">
     <meta name="twitter:description" content="Original Oktoberfest beer imported from Germany - while stocks last!">
-    <meta name="twitter:image" content="{{ env('APP_URL') }}/images/FBShare.jpg">
+    <meta name="twitter:image" content="{{ env('APP_URL') }}/images/Social-Share.jpg">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">

@@ -4,12 +4,8 @@
       "section": "Resources",
       "items": [
         {
-          "title": "Activity Logs",
-          "url": "\/admin\/activitylogs"
-        },
-        {
-          "title": "Settings",
-          "url": "\/admin\/settings"
+          "title": "Signups",
+          "url": "\/admin\/signups"
         }
       ]
     },

@@ -27,11 +27,17 @@ Route::group(['prefix' => 'api'], function () {
 
 // Backend Routes
 Auth::routes(['register' => false]);
-Route::get('admin', 'Admin\AdminController@index');
+
 Route::group(['middleware' => ['auth']], function () {
+    Route::get('admin', 'Admin\AdminController@index');
     Route::resource('admin/users', 'Admin\UsersController');
     Route::get('admin/profile/{id}', 'Admin\UsersController@edit');
     Route::view('admin/unauthorized', 'admin.unauthorized');
+    Route::resource('admin/activitylogs', 'Admin\ActivityLogsController')->only([
+        'index', 'show', 'destroy'
+    ]);
+    Route::get('admin/signups', 'Admin\SignupsController@index');
+    Route::get('admin/signups/{id}', 'Admin\SignupsController@show');    
 });
 // Super Admin Roles
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => ['auth', 'roles'], 'roles' => 'super-admin'], function () {
@@ -40,9 +46,8 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => ['aut
     Route::resource('settings', 'SettingsController');
     Route::get('generator', ['uses' => '\Appzcoder\LaravelAdmin\Controllers\ProcessController@getGenerator']);
     Route::post('generator', ['uses' => '\Appzcoder\LaravelAdmin\Controllers\ProcessController@postGenerator']);
+    Route::delete('signups/{id}', 'SignupsController@destroy');
 });
 Route::resource('admin/pages', 'Admin\PagesController');
-Route::resource('admin/activitylogs', 'Admin\ActivityLogsController')->only([
-    'index', 'show', 'destroy'
-]);
+
 

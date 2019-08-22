@@ -10658,6 +10658,11 @@ a.text-dark:focus {
   font-style: normal;
 }
 
+a,
+a:hover {
+  color: #CBA052;
+}
+
 body {
   font-family: "Futura", serif;
 }

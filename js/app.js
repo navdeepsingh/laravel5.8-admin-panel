@@ -60512,7 +60512,7 @@ if (false) {} else {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66049,7 +66049,7 @@ function (_React$Component) {
         className: "row py-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-md-12"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Terms & Condtions"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Brotzeit Oktoberfest Free Beer Campaign 2019"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "This offer is valid until 15 October 2019 only, unless otherwise stated. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Offer is valid only with a minimum order of 1 menu item per redemption. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Redemption is limited to 1 redemption per person on selected beers only, while stocks last. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Redemption is valid solely in-person at any of Brotzeit\u2019s outlets and for dine-in only:", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit Vivocity"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit Raffles City"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit Westgate"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit Katong"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit 313 Somerset"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "This promotion is not valid with any other discounts, promotions, privilege cards or vouchers. The management reserves the rights to amend the terms and conditions without any prior notice."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit Pte Ltd reserves the right to request for proof of identification at point of redemption and reserves the sole and absolute right to disqualify any participant or reject participants deemed ineligible for the promotion (be it under these Terms & Conditions or has engaged in a conduct that the organiser considers inappropriate or unacceptable). "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit Pte Ltd reserves the sole and absolute right to alter or end the offer at anytime, without giving prior notice or compensate in cash or in kind."))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sub_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Terms & Condtions"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Brotzeit Oktoberfest Free Beer Campaign 2019"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "This offer is valid from 3 September 2019 to 15 October 2019, unless otherwise stated."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Offer is valid only with a minimum order of 1 menu item per redemption. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Redemption is limited to 1 redemption per person on selected beers only, while stocks last. "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Redemption is valid solely in-person at any of Brotzeit\u2019s outlets and for dine-in only:", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit Vivocity"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit Raffles City"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit Westgate"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit Katong"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit 313 Somerset"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "This promotion is not valid with any other discounts, promotions, privilege cards or vouchers. The management reserves the rights to amend the terms and conditions without any prior notice."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit Pte Ltd reserves the right to request for proof of identification at point of redemption and reserves the sole and absolute right to disqualify any participant or reject participants deemed ineligible for the promotion (be it under these Terms & Conditions or has engaged in a conduct that the organiser considers inappropriate or unacceptable). "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Brotzeit Pte Ltd reserves the sole and absolute right to alter or end the offer at anytime, without giving prior notice or compensate in cash or in kind."))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sub_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
     }
   }]);
 
@@ -66112,7 +66112,7 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sub_components_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "container"
+        className: "container thanks"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -66121,10 +66121,14 @@ function (_React$Component) {
         className: "row"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-md-12 text-center py-2"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Thank you!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Please check your email for more details on how to redeem your free beer."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Do allow up to 15 minutes for our email to reach you. Remember to check your spam filters and add ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Thank you!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Please check your email for more details on how to redeem your free beer."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "pb-3"
+      }, "Do allow up to 15 minutes for our email to reach you. Remember to check your spam filters and add ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "mailto:marketing@brotzeit.co"
-      }, "marketing@brotzeit.co"), " to your safe senders list."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Share the free drink with a friend!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-        className: "list-inline social-links"
+      }, "marketing@brotzeit.co"), " to your safe senders list."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "share-text"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "Know someone who loves free beer?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Share this exclusive offer with them!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "list-inline social-links pb-3"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "list-inline-item"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -66154,7 +66158,7 @@ function (_React$Component) {
         target: "_blank",
         className: "btn btn-primary"
       }, "BOOK NOW"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "py-2"
+        className: "pt-5 pb-2"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "http://brotzeit.co/promotion/oktoberfest-2019/?utm_source=microsite&utm_medium=referral&utm_campaign=free_beer&utm_content=thankyou_page",
         target: "_blank"
@@ -66167,7 +66171,7 @@ function (_React$Component) {
         href: "http://brotzeit.co/promotion/oktoberfest-2019/?utm_source=microsite&utm_medium=referral&utm_campaign=free_beer&utm_content=thankyou_page",
         target: "_blank"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "./images/2019-08-06_Brotzeit_OktoBeerCampaignThankYouPage_PromoBanner_RO.jpg",
+        src: "./images/2019-08-22_Brotzeit_OktoBeerCampaignThankYouPage_PromoBanner_RO.jpg",
         className: "img-fluid"
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Click ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "http://brotzeit.co/promotion/oktoberfest-2019/?utm_source=mailchimp&utm_medium=edm&utm_campaign=free_beer&utm_content=redemption_email",
@@ -66722,7 +66726,7 @@ function (_React$Component) {
         value: this.state.loading ? 'Loading...' : 'Submit',
         className: "btn btn-primary",
         disabled: this.state.loading
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "T&Cs"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "*With a minimum order of 1 menu item at your preferred Brotzeit outlet. Limited to 1 redemption per person on selected beers only, while stock lasts. This offer is valid until 15 October 2019 unless otherwise stated. Not valid with any other discounts, promotions, privilege cards or vouchers. The management reserves the rights to amend the terms and conditions without any prior notice.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Terms & Conditions"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "*With a minimum order of 1 menu item at your preferred Brotzeit outlet. Limited to 1 redemption per person on selected beers only, while stock lasts. This offer is valid from 3 September 2019 until 15 October 2019 unless otherwise stated. Not valid with any other discounts, promotions, privilege cards or vouchers. The management reserves the rights to amend the terms and conditions without any prior notice.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "text-center pt-5"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Follow us for more exclusive Oktoberfest deals!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "list-inline social-links"

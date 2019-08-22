@@ -66406,18 +66406,23 @@ function (_React$Component) {
 
     _defineProperty(_assertThisInitialized(_this), "state", {
       errors: [],
-      participant_name: ''
+      participant_name: '',
+      loading: false
     });
 
     _defineProperty(_assertThisInitialized(_this), "onSubmitHandle", function (e) {
       e.preventDefault();
+
+      _this.setState({
+        loading: true
+      });
+
       var props = _this.props.propsPassed;
       var code = props.match.params.code;
       var redeem = {
         redeem_code: code,
         outlet: _this.outlet.current.value
       };
-      console.log(redeem);
       axios.post("/api/redeem", redeem).then(function (response) {
         console.log(response);
 
@@ -66430,7 +66435,8 @@ function (_React$Component) {
         console.log(error.response);
 
         _this.setState({
-          errors: error.response.data.errors
+          errors: error.response.data.errors,
+          loading: false
         });
       });
     });
@@ -66504,8 +66510,9 @@ function (_React$Component) {
         className: "form-group"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "submit",
-        value: "Submit",
-        className: "btn btn-primary"
+        value: this.state.loading ? 'Submitting..' : 'Submit',
+        className: "btn btn-primary",
+        disabled: this.state.loading
       })))))))));
     }
   }]);

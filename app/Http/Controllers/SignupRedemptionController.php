@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Outlet;
 use App\Redemption;
+use App\Events\RedemptionEvent;
 
 class SignupRedemptionController extends Controller
 {
@@ -29,6 +30,9 @@ class SignupRedemptionController extends Controller
             $redemption->outlet_id = $outlet->id;
             $redemption->save();
             $response = 1;
+
+            // Trigger Mailchimp Event
+            event(new RedemptionEvent($redemption));
         }
 
         return response()->json( $response );

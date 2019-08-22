@@ -2,7 +2,7 @@
 
 namespace App\Listeners;
 
-use App\Events\SignupEvent;
+use App\Events\RedemptionEvent;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
@@ -22,17 +22,17 @@ class MergeTagsToMailchimp
     /**
      * Handle the event.
      *
-     * @param  SignupEvent  $event
+     * @param  RedemptionEvent  $event
      * @return void
      */
-    public function handle(SignupEvent $event)
+    public function handle(RedemptionEvent $event)
     {
 
         $this->mailchimp->lists->updateMember(
             env('MAILCHIMP_LIST_ID'),
-            ['email' => $event->signup->email],
-            ['OUTLET' => $event->signup->redemption->redeem_code, 
-            'REDEEMDATE' => $event->signup->redemption->updated_at],
+            ['email' => $event->redemption->signup->email],
+            ['OUTLET' => $event->redemption->outlet->title, 
+            'REDEEMDATE' => $event->redemption->updated_at],
             null,
             false
         );

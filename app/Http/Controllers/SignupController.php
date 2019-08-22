@@ -4,7 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use App\Signup;
 use App\Redemption;
- use App\Events\SignupEvent;
+use App\Events\SignupEvent;
 
 
 class SignupController extends Controller

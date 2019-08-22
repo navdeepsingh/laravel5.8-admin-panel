@@ -8,7 +8,8 @@ use Faker\Generator as Faker;
 
 $factory->define(Outlet::class, function (Faker $faker) {
     return [
-        'code' => Str::random(4)
+        'code' => Str::random(4),
+        'title' => "Title"
     ];
 });
 

@@ -16,6 +16,7 @@ class CreateOutletsTable extends Migration
         Schema::create('outlets', function (Blueprint $table) {
             $table->bigIncrements('id')->autoIncrement();
             $table->string('code');
+            $table->string('title');
             $table->timestamps();
         });
     }

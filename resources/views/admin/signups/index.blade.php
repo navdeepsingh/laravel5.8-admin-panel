@@ -30,7 +30,7 @@
                                         <td>{{ $item->email }}</td>
                                         <td>{{ $item->phone }}</td>
                                         @if ($item->redemption->outlet_id === null)
-                                            <td>No Action</td>
+                                            <td>Not Redeemed Yet</td>
                                         @else
                                             <td><span class="text-success">Redeemed</span></td>
                                         @endif

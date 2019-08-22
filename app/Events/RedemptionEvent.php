@@ -9,22 +9,22 @@ use Illuminate\Broadcasting\PresenceChannel;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
-use App\Signup;
+use App\Redemption;
 
 class RedemptionEvent
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    public $signup;
+    public $redemption;    
 
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct(Signup $signup)
+    public function __construct(Redemption $redemption)
     {
-        $this->signup = $signup;
+        $this->redemption = $redemption;        
     }
 
     /**

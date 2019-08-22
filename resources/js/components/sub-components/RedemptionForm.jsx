@@ -11,7 +11,8 @@ class RedemptionForm extends React.Component {
 
   state = {
     errors: [],
-    participant_name: ''
+    participant_name: '',
+    loading: false
   }
 
   componentWillMount() {
@@ -34,18 +35,18 @@ class RedemptionForm extends React.Component {
   onSubmitHandle = (e) => {
     e.preventDefault();
 
+    this.setState({
+      loading: true
+    })
+
     const props = this.props.propsPassed;
     const code = props.match.params.code;
-
 
     const
       redeem = {
         redeem_code: code,
         outlet: this.outlet.current.value
       }
-
-    console.log(redeem);
-
 
     axios.post(`/api/redeem`, redeem)
       .then(response => {
@@ -60,7 +61,8 @@ class RedemptionForm extends React.Component {
         console.log(error.response);
 
         this.setState({
-          errors: error.response.data.errors
+          errors: error.response.data.errors,
+          loading: false
         })
       })
 
@@ -102,7 +104,7 @@ class RedemptionForm extends React.Component {
                       {this.renderErrorFor('redeem_code')}
                     </div>
                     <div className="form-group">
-                      <input type="submit" value="Submit" className="btn btn-primary" />
+                      <input type="submit" value={this.state.loading ? 'Submitting..' : 'Submit'} className="btn btn-primary" disabled={this.state.loading} />
                     </div>
                   </form>
                 </div>

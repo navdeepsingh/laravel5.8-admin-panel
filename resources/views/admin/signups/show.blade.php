@@ -30,9 +30,13 @@
                                         <td>{{ $signup->email }}</td>
                                     </tr>
                                     <tr>
+                                        <td>Register Date Time</td>
+                                        <td>{{ $signup->created_at }}</td>
+                                    </tr>
+                                    <tr>
                                         <td>Redemption Status</td>
                                         @if ($signup->redemption->outlet_id === null)
-                                            <td>No Action</td>
+                                            <td>Not Redeemed Yet</td>
                                         @else
                                             <td><span class="text-success">Redeemed</span></td>
                                         @endif                                        
@@ -40,7 +44,7 @@
                                     @if ($signup->redemption->outlet_id !== null)
                                         <tr>
                                             <td>Outlet</td>
-                                            <td>{{ $signup->redemption->outlet }}</td>
+                                            <td>{{ $signup->redemption->outlet->title }}</td>
                                         </tr> 
                                         <tr>
                                             <td>Redemption Date Time</td>

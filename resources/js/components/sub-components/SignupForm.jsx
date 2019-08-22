@@ -108,7 +108,7 @@ class SignupForm extends React.Component {
                         </div>
                         <div className="form-group">
                           <label htmlFor="phone">Contact No</label>
-                          <input type="number" ref={this.phone} className="form-control" id="phone" name="phone" placeholder="Enter Contact No." />
+                          <input type="number" ref={this.phone} className="form-control" id="phone" name="phone" placeholder="Enter contact no." />
                           {this.renderErrorFor('phone')}
                         </div>
                         <div className="form-group">

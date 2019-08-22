@@ -66152,8 +66152,13 @@ function (_React$Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-envelope"
       })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "share-text"
+      }, "Share on Whatsapp ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "https://api.whatsapp.com/send?text=" + _config__WEBPACK_IMPORTED_MODULE_3__["default"].whatsapp,
+        target: "_blank"
+      }, "here"), "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
         className: "pt-3 book-now"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "BOOK YOUR TABLE TODAY!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, "BOOK YOUR TABLE TODAY!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "http://brotzeit.co/reservation/?utm_source=microsite&utm_medium=referral&utm_campaign=free_beer%20&utm_content=thankyou_page",
         target: "_blank",
         className: "btn btn-primary"
@@ -66217,6 +66222,7 @@ __webpack_require__.r(__webpack_exports__);
 var config = {};
 config.tweet = "Grab your free beer at bit.ly/free-brotzeit-beer and head to Brotzeit for the Oktoberfest party of the year! #oktoberfest2019";
 config.mail = "mailto:enteryourfriend@addresshere?subject=Hey there, here’s a free beer!&body=Come join me at Brotzeit for a free mug of original Oktoberfest beer! Visit http://oktoberfest.brotzeit.co to redeem it now.";
+config.whatsapp = "I've just received a free beer from Brotzeit. Get yours at  http://bit.ly/brotzeitfreebeer and join me in celebrating Oktoberfest at Brotzeit!";
 /* harmony default export */ __webpack_exports__["default"] = (config);
 
 /***/ }),
@@ -66700,7 +66706,7 @@ function (_React$Component) {
         className: "form-control",
         id: "phone",
         name: "phone",
-        placeholder: "Enter Contact No."
+        placeholder: "Enter contact no."
       }), this.renderErrorFor('phone')), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "form-group"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {

@@ -10740,6 +10740,18 @@ select:not([multiple]) {
   width: 15px;
 }
 
+.thanks .share-text {
+  color: #4F2C1D;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.thanks .share-text span {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-family: Futura-bold;
+}
+
 footer {
   background-color: #4F2C1D;
   color: white;

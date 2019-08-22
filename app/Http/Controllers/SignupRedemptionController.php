@@ -43,17 +43,6 @@ class SignupRedemptionController extends Controller
             $response = $signup[0]->name;
             $status = 200;
         } 
-        //$response = $redemption->user()->get();
-        //dd($response);
-        // if (sizeof($redemptionOutlet) === 1) {
-        //     // Already Redeemed
-        //     $response = 0;
-        // } else {
-        //     // New Redemption
-        //     $redemption->outlet_id = $outlet->id;
-        //     $redemption->save();
-        //     $response = 1;
-        // }
         return response()->json($response, $status);
     }
 

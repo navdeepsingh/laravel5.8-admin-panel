@@ -21,6 +21,9 @@ class EventServiceProvider extends ServiceProvider
         'App\Events\SignupEvent' => [
             'App\Listeners\SubscribeToMailchimp',
         ],
+        'App\Events\RedemptionEvent' => [
+            'App\Listeners\MergeTagsToMailchimp',
+        ],
     ];
 
     /**

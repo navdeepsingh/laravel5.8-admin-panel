@@ -129,10 +129,10 @@ class SignupForm extends React.Component {
                           />
                         </div>
                         <p>
-                          <strong>T&amp;Cs</strong><br />
+                          <strong>Terms &amp; Conditions</strong><br />
                           *With a minimum order of 1 menu item at your preferred Brotzeit outlet.
                           Limited to 1 redemption per person on selected beers only, while stock
-                          lasts. This offer is valid until 15 October 2019 unless otherwise stated.
+                          lasts. This offer is valid from 3 September 2019 until 15 October 2019 unless otherwise stated.
                           Not valid with any other discounts, promotions, privilege cards or
                           vouchers. The management reserves the rights to amend the terms and
                           conditions without any prior notice.

@@ -13,7 +13,7 @@ class Terms extends React.Component {
               <h1>Terms &amp; Condtions</h1>
               <h2>Brotzeit Oktoberfest Free Beer Campaign 2019</h2>
               <ol>
-                <li>This offer is valid until 15 October 2019 only, unless otherwise stated. </li>
+                <li>This offer is valid from 3 September 2019 to 15 October 2019, unless otherwise stated.</li>
                 <li>Offer is valid only with a minimum order of 1 menu item per redemption. </li>
                 <li>Redemption is limited to 1 redemption per person on selected beers only, while stocks last. </li>
                 <li>Redemption is valid solely in-person at any of Brotzeit’s outlets and for dine-in only:

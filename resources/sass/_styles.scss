@@ -90,6 +90,19 @@ select:not([multiple]) {
     }
   }
 }
+.thanks {
+  .share-text{
+    color: $darkbrown;
+    font-weight: 700;
+    font-size: 17px;
+
+    span{
+      font-size: 1.3em;
+      text-transform: uppercase;
+      font-family: Futura-bold;
+    }
+  }
+}
 // Footer Styles
 footer {
   background-color: $darkbrown;

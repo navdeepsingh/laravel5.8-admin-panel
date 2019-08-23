@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Signup;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 
 class SignupsController extends Controller
 {
@@ -55,5 +56,35 @@ class SignupsController extends Controller
         Signup::destroy($id);
 
         return redirect('admin/signups')->with('flash_message', 'Signup deleted!');
+    }
+
+
+    public function download() {
+        $csvExporter = new \Laracsv\Export();
+        $signups = Signup::with('redemption.outlet')->orderBy('created_at','desc')->get(); // All users        
+       // Register the hook before building
+        $csvExporter->beforeEach(function ($signup) {
+            $signup->created_at = date('Y-m-d', strtotime($signup->created_at));
+            if (strtotime($signup->redemption->created_at) !== strtotime($signup->redemption->updated_at)) {
+                $signup->redeemed_at = date('Y-m-d', strtotime($signup->redemption->updated_at));
+            } else {
+                $signup->redeemed_at = '';
+            }
+            $signup->opt_in = $signup->opt_in ? 'Yes' : 'No';
+            
+        });
+
+        $csvExporter->build($signups, [
+            'name' => 'Full Name',
+            'email' => 'Email', 
+            'phone' => 'Phone',
+            'beer' => 'Preferred Beer',
+            'opt_in' => 'Newsletter Opt In',
+            'phone' => 'Phone',             
+            'redemption.redeem_code' => 'Redeem Code', 
+            'redemption.outlet.title' => 'Outlet', 
+            'created_at' => 'Registered', 
+            'redeemed_at' => 'Redeemed'
+            ])->download();
     }
 }

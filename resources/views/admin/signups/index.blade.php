@@ -7,7 +7,10 @@
 
             <div class="col-md-9">
                 <div class="card">
-                    <div class="card-header">Total Signups: {{ $signups->count() }}</div>
+                    <div class="card-header">
+                        <div class="float-left">Total Signups: {{ $signups->count() }}</div>
+                        <div class="float-right">Download CSV <a href="{{ url('/admin/signups-download') }}" title="Download CSV" target="_blank"><button class="btn btn-info btn-sm"><i class="fa fa-download" aria-hidden="true"></i></button></a></div>
+                    </div>
                     <div class="card-body">
                         
                         <div class="table-responsive">

@@ -30,6 +30,14 @@
                                         <td>{{ $signup->email }}</td>
                                     </tr>
                                     <tr>
+                                        <td>Preferred Beer</td>
+                                        <td>{{ $signup->beer }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Newsletter Opt-in</td>
+                                        <td>{{ $signup->opt_in ? 'Yes' : 'No' }}</td>
+                                    </tr>
+                                    <tr>
                                         <td>Register Date Time</td>
                                         <td>{{ $signup->created_at }}</td>
                                     </tr>

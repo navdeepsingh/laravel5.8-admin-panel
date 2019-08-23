@@ -64,9 +64,8 @@ class SignupsController extends Controller
         $signups = Signup::with('redemption.outlet')->orderBy('created_at','desc')->get(); // All users        
        // Register the hook before building
         $csvExporter->beforeEach(function ($signup) {
-            $signup->created_at = date('Y-m-d', strtotime($signup->created_at));
             if (strtotime($signup->redemption->created_at) !== strtotime($signup->redemption->updated_at)) {
-                $signup->redeemed_at = date('Y-m-d', strtotime($signup->redemption->updated_at));
+                $signup->redeemed_at = $signup->redemption->updated_at;
             } else {
                 $signup->redeemed_at = '';
             }

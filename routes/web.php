@@ -11,11 +11,7 @@
 |
 */
 // use Illuminate\Support\Carbon;
-// use \App\Signup;
-
-// $signup = Signup::find(1);
-// dd(Carbon::createFromFormat('Y-m-d H:i:s', $signup->created_at)
-//                 ->format('d-m-Y'));
+// dd(Carbon::NOW());
 
 
 // Reactjs Routes

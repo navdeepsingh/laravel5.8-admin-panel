@@ -22,7 +22,7 @@ class Thanks extends React.Component {
                     Share this exclusive offer with them!
                   </p>
                   <ul className="list-inline social-links pb-3">
-                    <li className="list-inline-item"><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Foktoberfest.brotzeit.co/?utm_source=microsite&utm_medium=referral&utm_campaign=free_beer&utm_content=thankyou_page&amp;src=website" target="_blank"><i className="fa fa-facebook"></i></a></li>
+                    <li className="list-inline-item"><a href={"https://www.facebook.com/sharer/sharer.php?u=" + config.fbshare} target="_blank"><i className="fa fa-facebook"></i></a></li>
                     <li className="list-inline-item"><a href={"https://twitter.com/intent/tweet?text=" + config.tweet}
                       rel="noopener" target="_blank"><i className="fa fa-twitter"></i></a></li>
                     <li className="list-inline-item"><a href={config.mail} target="_blank"><i className="fa fa-envelope"></i></a></li>

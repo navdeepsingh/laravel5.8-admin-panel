@@ -66223,7 +66223,7 @@ function (_React$Component) {
 __webpack_require__.r(__webpack_exports__);
 var config = {};
 config.fbshare = "http://oktoberfest.brotzeit.co/?utm_source=microsite&utm_medium=referral&utm_campaign=free_beer&utm_content=thankyou_page&amp;src=website";
-config.tweet = "Grab your free beer at bit.ly/free-brotzeit-beer and head to Brotzeit for the Oktoberfest party of the year! #oktoberfest2019";
+config.tweet = "Grab your free beer at bit.ly/brotzeit-beer and head to Brotzeit for the Oktoberfest party of the year! #oktoberfest2019";
 config.mail = "mailto:enteryourfriend@addresshere?subject=Hey there, here’s a free beer!&body=Come join me at Brotzeit for a free mug of original Oktoberfest beer! Visit http://oktoberfest.brotzeit.co to redeem it now.";
 config.whatsapp = "I've just received a free beer from Brotzeit. Get yours at  http://bit.ly/brotzeitfreebeer and join me in celebrating Oktoberfest at Brotzeit!";
 /* harmony default export */ __webpack_exports__["default"] = (config);

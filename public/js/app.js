@@ -66612,6 +66612,7 @@ function (_React$Component) {
         if (response.status == 200) {
           // redirect to the thanks
           history.push('/thanks#top');
+          window.location = '/thanks#top';
         }
       })["catch"](function (error) {
         console.log(error);

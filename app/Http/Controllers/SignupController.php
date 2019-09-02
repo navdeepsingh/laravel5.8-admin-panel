@@ -54,7 +54,7 @@ class SignupController extends Controller
         $signup->redemption()->save($redemption);
 
         // Trigger event for Mailchimp
-       // event(new SignupEvent($signup));
+        event(new SignupEvent($signup));
 
         return response()->json($signup);
     }

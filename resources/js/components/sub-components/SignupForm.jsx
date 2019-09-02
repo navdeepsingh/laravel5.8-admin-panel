@@ -45,7 +45,7 @@ class SignupForm extends React.Component {
       .then(response => {
         if (response.status == 200) {
           // redirect to the thanks
-          history.push('/thanks#top');
+          //history.push('/thanks#top');
           window.location = '/thanks#top'
         }
       })

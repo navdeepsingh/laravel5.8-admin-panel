@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Signup;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\DB;
 
 class SignupsController extends Controller
 {
@@ -26,7 +27,12 @@ class SignupsController extends Controller
             $signups = Signup::latest()->paginate($perPage);
         }
 
-        return view('admin.signups.index', compact('signups'));
+        $redemptions =  DB::table('signups')
+                        ->join('redemption', 'signups.id','=','redemption.signup_id')
+                        ->whereNotNull('redemption.outlet_id')
+                        ->count();
+
+        return view('admin.signups.index', compact('signups', 'redemptions'));
     }
     
 

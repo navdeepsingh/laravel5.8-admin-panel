@@ -8,10 +8,23 @@
             <div class="col-md-9">
                 <div class="card">
                     <div class="card-header">
-                        <div class="float-left">Total Signups: {{ $signups->total() }}</div>
+                        <div class="float-left">Total Signups: <strong>{{ $signups->total() }}</strong>, Total Redemptions: <strong>{{ $redemptions }}</strong></div>
                         <div class="float-right">Download CSV <a href="{{ url('/admin/signups-download') }}" title="Download CSV" target="_blank"><button class="btn btn-info btn-sm"><i class="fa fa-download" aria-hidden="true"></i></button></a></div>
                     </div>
                     <div class="card-body">
+                    {!! Form::open(['method' => 'GET', 'url' => '/admin/signups', 'class' => 'form-inline my-2 my-lg-0 float-right', 'role' => 'search'])  !!}
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="search" placeholder="Search..." value="{{ request('search') }}">
+                            <span class="input-group-append">
+                                <button class="btn btn-secondary" type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                        {!! Form::close() !!}
+
+                        <br/>
+                        <br/>
                         
                         <div class="table-responsive">
                             <table class="table">

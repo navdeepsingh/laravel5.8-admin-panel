@@ -10757,6 +10757,12 @@ select:not([multiple]) {
   font-family: Futura-bold;
 }
 
+#error-page h2 {
+  color: var(--danger);
+  font-size: 37px;
+  padding-bottom: 20px;
+}
+
 footer {
   background-color: #4F2C1D;
   color: white;

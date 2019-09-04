@@ -5,7 +5,7 @@ import Footer from './sub-components/Footer';
 class Error extends React.Component {
   render() {
     return (
-      <div>
+      <div id="error-page">
         <Header />
         <div className="container">
           <div className="row">

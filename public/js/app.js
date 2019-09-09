@@ -60512,7 +60512,7 @@ if (false) {} else {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66172,7 +66172,7 @@ function (_React$Component) {
         href: "http://brotzeit.co/promotion/oktoberfest-2019/?utm_source=microsite&utm_medium=referral&utm_campaign=free_beer&utm_content=thankyou_page",
         target: "_blank"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "./images/2019-08-22_Brotzeit_OktoBeerThankYouEmail_MainHeader_800x350_RO.jpg",
+        src: "./images/2019-09-09_Brotzeit_OktoBeerThankYouEmail_MainHeader_800x350_RO_v3.jpg",
         className: "img-fluid"
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "py-2"

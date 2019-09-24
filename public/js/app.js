@@ -66185,7 +66185,13 @@ function (_React$Component) {
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Click ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "http://brotzeit.co/promotion/oktoberfest-2019/?utm_source=mailchimp&utm_medium=edm&utm_campaign=free_beer&utm_content=redemption_email",
         target: "_blank"
-      }, "here"), " for more information on Oktoberfest Celebrations @ Brotzeit!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "here"), " for more information on Oktoberfest Celebrations @ Brotzeit!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+        "class": "book-now"
+      }, "BOOK NOW"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
+        src: "https://bookv5.chope.co/booking?rid=brozeitwestgate1711bzw&source=rest_brotzeit.co&select_location=1",
+        width: "auto",
+        height: "750"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "text-center pt-5"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Follow us for more exclusive Oktoberfest deals!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "list-inline social-links"

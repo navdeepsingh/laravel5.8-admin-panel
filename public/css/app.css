@@ -10686,6 +10686,14 @@ header {
   font-family: Futura-bold;
 }
 
+h2.book-now {
+  color: #111111;
+  font-weight: 800;
+  font-size: 54px;
+  text-align: center;
+  font-family: Futura-bold;
+}
+
 .btn {
   background-color: #4F2C1D;
   color: white;

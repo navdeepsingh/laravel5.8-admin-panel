@@ -33,6 +33,8 @@ class Thanks extends React.Component {
                   <p className="pt-5 pb-2"><a href="http://brotzeit.co/promotion/oktoberfest-2019/?utm_source=microsite&utm_medium=referral&utm_campaign=free_beer&utm_content=thankyou_page" target="_blank"><img src="./images/2019-09-09_Brotzeit_OktoBeerThankYouEmail_MainHeader_800x350_RO_v3.jpg" className="img-fluid" /></a></p>
                   <p className="py-2"><a href="http://brotzeit.co/promotion/oktoberfest-2019/?utm_source=microsite&utm_medium=referral&utm_campaign=free_beer&utm_content=thankyou_page" target="_blank"><img src="./images/2019-08-22_Brotzeit_OktoBeerCampaignThankYouPage_PromoBanner_RO.jpg" className="img-fluid" /></a></p>
                   <p>Click <a href="http://brotzeit.co/promotion/oktoberfest-2019/?utm_source=mailchimp&utm_medium=edm&utm_campaign=free_beer&utm_content=redemption_email" target="_blank">here</a> for more information on Oktoberfest Celebrations @ Brotzeit!</p>
+                  <h2 class="book-now">BOOK NOW</h2>
+                  <iframe src="https://bookv5.chope.co/booking?rid=brozeitwestgate1711bzw&amp;source=rest_brotzeit.co&amp;select_location=1" width="auto" height="750"></iframe>
                   <div className="text-center pt-5">
                     <p><strong>Follow us for more exclusive Oktoberfest deals!</strong></p>
                     <ul className="list-inline social-links">
@@ -40,7 +42,6 @@ class Thanks extends React.Component {
                       <li className="list-inline-item"><a href="https://www.instagram.com/brotzeit.sg/" target="_blank"><i className="fa fa-instagram"></i></a></li>
                     </ul>
                   </div>
-
                 </div>
               </div>
 
